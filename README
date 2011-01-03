@@ -17,7 +17,7 @@ Now that you have your click handler and file to load, you need to add a chapter
 
 &lt;a href="#" class="loader" data-timestamp="2:45"&gt;_js Library&lt;/a&gt;
 
-This example would jump the yayquery_0.mp3 file to the 2 minute 45 second mark and start playing from there.
+This example would jump the yayquery_0.mp3 file to the 2 minute 45 second mark and start playing from there. (note .mp3 is the default file type)
 
 Next you need to call the new plugin on the click handler. It can be basic like so (uses default values for file type, directory and element classes):
 
