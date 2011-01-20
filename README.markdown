@@ -37,6 +37,11 @@ Here are some more customizable variables you can use to suit your needs:
 
 ## Changelog:
 
+### v.1.1 : January 19th, 2011
+
+#### General
+* Now checks for audio type based on browser. You will need to have .ogg and .mp3 files for this to work properly.
+
 ### v.1.0 : January 3rd, 2011
 
 #### General
