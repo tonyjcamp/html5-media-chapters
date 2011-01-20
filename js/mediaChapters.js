@@ -6,8 +6,23 @@
 		var mediaChapters = {
 			audioElement: $('.audio'), // Default audio player that will load the audio file
 			audioChapter:  $('.loader'), // Default element that will have the data-timestamp for the chapter
-			audioDirectory: 'mp3' // Directory where audio files live
-		};
+			audioDirectory: 'mp3', // Directory where audio files live
+		},
+	        bool = !!mediaChapters.audioElement.canPlayType;
+		
+		// Modernizr's audio file compatibility check
+		// http://www.modernizr.com/
+		if (bool){  
+	        bool      = new Boolean(bool);  
+	        bool.ogg  = elem.canPlayType('audio/ogg; codecs="vorbis"');
+	        bool.mp3  = elem.canPlayType('audio/mpeg;');
+	    }
+
+		if(bool.mp3) {
+			var extension = '.mp3';			
+		} else {
+			var extension = '.ogg';
+		}
 
 		if(options) {
 			$.extend(mediaChapters, options);
@@ -21,7 +36,7 @@
 			$.ajax({
 				success: function() {
 					mediaChapters.audioElement.attr({
-						src: mediaChapters.audioDirectory + '/' + episode + '.mp3'
+						src: mediaChapters.audioDirectory + '/' + episode + extension
 					});
 				}
 			});
