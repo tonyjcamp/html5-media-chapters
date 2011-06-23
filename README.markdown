@@ -1,11 +1,11 @@
 # HTML5 Media Chapters <http://tonycamp.com/html5-media-chapters/>
-(Currently only working in Google Chrome)
+Currently only working in Google Chrome, Safari and FireFox
 
 ## Summary
 
 The beginnings of a jQuery plugin that will allow you to time stamp an element, attach an event handler to it which will load an audio file, and jump to the specified time stamp.
 
-I chose to use the yayQuery podcasts as a demo because they taught me so much. Learn, and share. Thanks Rebecca Murphey, Adam Sontag, Alex Slexton, Paul Irish. Follow these people on github and twitter. You will learn a ton.
+I chose to use the yayQuery podcasts as a demo because they taught me so much. Learn, and share. Thanks Rebecca Murphey, Adam Sontag, Alex Sexton, Paul Irish. Follow these people on github and twitter. You will learn a ton.
 
 ## How To Use
 
